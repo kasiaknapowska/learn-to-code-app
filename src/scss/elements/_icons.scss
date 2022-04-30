@@ -1,0 +1,39 @@
+.page_icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .el_icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .back_icon {
+    width: 1.5rem;
+    cursor: pointer;
+    margin-right: 0.8rem;
+  }
+  .alert_icon {
+    width: 1rem;
+    margin-left: 0.5rem;
+    color: $colorAlert;
+  }
+  .protip_icon {
+    width: 4rem;
+    margin-bottom: 1rem;
+  }
+  .close_icon {
+    width: 1rem;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+      transform: rotate(180deg)
+    }
+  }
+  .table_icon {
+    width: 1.8rem;
+  }
+  .note_icon {
+    height: 1.5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }

@@ -1,0 +1,39 @@
+.home_btn {
+    @include button;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  .primary_btn {
+    @include button;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    position: relative;
+  }
+  
+  .secondary_btn {
+    @include buttonFont;
+    color: $colorAccent;
+    background-color: white;
+    border: 1px solid $colorAccent;
+    border-radius: $borderRadius;
+    padding: 0.8rem 2.2rem;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+    &:hover {
+      border-width: 2px;
+      padding: calc(0.8rem - 1px) calc(2.2rem - 2px);
+      font-weight: 600;
+    }
+  }
+  
+  .back_btn {
+    @include buttonFont;
+    font-size: 1.2rem;
+    color: $colorNeutralDark;
+    margin: 2rem 0 2rem 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  

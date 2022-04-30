@@ -1,0 +1,101 @@
+.result_element {
+    padding: 2rem 0 1rem 0;
+    margin: 1rem 2rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .prize_element {
+    border-radius: $borderRadius;
+    width: 13rem;
+    height: 13rem;
+    padding: 2rem 0 1rem 0;
+    margin: 1rem 3rem;
+    background-color: $colorAccent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .el_title {
+      color: white;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  
+  .tables_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .table_container {
+    margin: 2rem;
+    padding: .5rem;
+    border-radius: $borderRadius;
+    border: 1px solid $colorNeutralVeryLight;
+    h2 {
+      text-align: left;
+      margin-left: 0.5rem;
+    }
+  }
+  .table_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .table_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin: .5rem 0;
+    border-radius: $borderRadius;
+    font-size: 0.8rem;
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-left: .5rem;
+    }
+  }
+  .table_best {
+    background-color: $colorPrimary;
+    color: white;
+  }
+  .table_total {
+    color: $colorNeutralDark;
+    background-color: #f7f7f7;
+  }
+  
+  .table_icon_container {
+    background-color: $colorAccent;
+    padding: 0.5rem 0;
+    border-radius: $borderRadius;
+  }
+  
+  thead {
+    border-bottom: 1px solid $colorNeutralVeryLight;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  th {
+    @include websiteFont(600, $colorPrimary, $size: 1rem) {
+      text-transform: uppercase;
+    }
+    padding-bottom: 0.5rem;
+  }
+  td {
+    letter-spacing: 1px;
+    color: $colorNeutralDark;
+  }
+  

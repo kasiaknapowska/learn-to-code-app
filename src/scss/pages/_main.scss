@@ -1,0 +1,78 @@
+.bg_main {
+  &::before {
+    @media screen and ($tablet) {
+      content: "";
+      display: block;
+      background-image: url(../../images/bg-main.png);
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 30%;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+.logo_main {
+  width: 8rem;
+  margin: 3rem;
+}
+
+.nav_element {
+  border: 1px solid $colorNeutralLight;
+  box-shadow: 0 3px 5px $colorNeutralVeryLight;
+  border-radius: $borderRadius;
+  width: 13rem;
+  height: 13rem;
+  padding: 3rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  &:hover {
+    border-color: $colorAccent;
+    border-width: 3px;
+    box-shadow: 0 5px 20px $colorNeutralVeryLight;
+    padding: calc(3rem - 1px) 0 calc(1rem - 1px) 0;
+  }
+}
+
+.el_title {
+  display: block;
+  @include websiteFont(600, $colorPrimary, 1.2rem) {
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+}
+
+.protip {
+  background-color: $colorPrimary;
+  padding: 2rem;
+  border-radius: $borderRadius;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    left: auto;
+  }
+  h4 {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  p {
+    color: white;
+    padding: 0.5rem 0 0 0;
+    font-family: $codeFont;
+  }
+}
+
+.close {
+  display: none;
+}

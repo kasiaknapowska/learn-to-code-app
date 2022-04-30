@@ -1,0 +1,30 @@
+.bg {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url(../../images/bg-mobile.png);
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 60%;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      @media screen and ($tablet) {
+        background-size: 50%;
+        background-image: url(../../images/bg-desktop.png);
+      }
+      @media screen and ($desktop) {
+        background-size: 40%;
+      }
+    }
+  }
+  .logo_home {
+    width: 12rem;
+    margin: 4rem 0;
+    @media screen and ($desktop) {
+      margin: 0;
+      margin-bottom: 4rem;
+    }
+  }
+  
