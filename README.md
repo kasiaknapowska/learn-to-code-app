@@ -6,9 +6,9 @@ This is my final exam project made in CodersLab School (course: JavaScript Front
 
 1. Home with a basic "logging panel" demanding user name only
 2. Main section with menu:
-..* Notes - list of notes, possibility to add new notes, edit or delete existing notes
-..* Quiz - category select, new quiz import, timer, result summary, possibility to check correct answers and save quiz result.
-..* Results - tables with saved quiz results
+3. Notes - list of notes, possibility to add new notes, edit or delete existing notes
+4. Quiz - category select, new quiz import, timer, result summary, possibility to check correct answers and save quiz result.
+5. Results - tables with saved quiz results
 
 ### Technologies used
 
@@ -30,4 +30,4 @@ illustrative version of my project (it has been changing in the meantime)
 
 ![Desktop screenshots](./Desktop.jpg)
 
-Author: Katarzyna Knapowska[^1].
+##### Author: Katarzyna Knapowska.
