@@ -10,7 +10,7 @@ This is my final exam project made in CodersLab School (course: JavaScript Front
 4. Quiz - category select, new quiz import, timer, result summary, possibility to check correct answers and save quiz result.
 5. Results - tables with saved quiz results
 
-### Technologies used
+## Technologies used
 
 * [React](https://reactjs.org/) - project initiated with [Create React App](https://github.com/facebook/create-react-app)
 * [React router](https://reactrouter.com/docs/en/v6)
@@ -21,13 +21,13 @@ This is my final exam project made in CodersLab School (course: JavaScript Front
 * [Styled Components](https://styled-components.com/) - for dropdown select in quiz section
 * Flexbox
 * RWD
-* AdobeXD [Here](https://xd.adobe.com/view/aef40d2b-9a08-41b3-8622-740ae76be35f-fba7/) you can see an 
+* AdobeXD [Here](https://xd.adobe.com/view/aef40d2b-9a08-41b3-8622-740ae76be35f-fba7/grid) you can see an 
 illustrative version of my project (it has been changing in the meantime)
 
-#### How it looks like
+## How it looks like
 
 ![Mobile screenshots](./Mobile.jpg)
 
 ![Desktop screenshots](./Desktop.jpg)
 
-##### Author: Katarzyna Knapowska.
+### Author: Katarzyna Knapowska
