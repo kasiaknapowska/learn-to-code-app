@@ -24,10 +24,14 @@ This is my final exam project made in CodersLab School (course: JavaScript Front
 * AdobeXD [Here](https://xd.adobe.com/view/aef40d2b-9a08-41b3-8622-740ae76be35f-fba7/grid) you can see an 
 illustrative version of my project (it has been changing in the meantime)
 
-## How it looks like
+## Screenshots
 
 ![Mobile screenshots](./Mobile.jpg)
 
 ![Desktop screenshots](./Desktop.jpg)
 
-### Author: Katarzyna Knapowska
+## Deployed on vercel.com
+
+[https://learn-to-code-app.vercel.app/](https://learn-to-code-app.vercel.app/)
+
+#### Author: Katarzyna Knapowska
