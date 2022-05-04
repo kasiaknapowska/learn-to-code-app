@@ -58,7 +58,6 @@ const getResults = (category, successCallback) => {
   getDocs(collection(db, `results-${category}`))
     .then((response) => {
       successCallback(response);
-      // console.log(response.docs)
     })
     .catch((err) => console.log(err.message));
 };

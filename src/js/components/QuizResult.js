@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ResultElement from "./ResultElement";
 import { postResult } from "../lib/func-firebase";
@@ -58,17 +58,17 @@ export default function QuizResult({
   }
   const date = `${day}/${month}/${year.toString().slice(2, 4)}`;
 
-  // useEffect(() => {
-  //   postResult(
-  //     category,
-  //     numberOfCorrectAnswers,
-  //     time,
-  //     score,
-  //     date,
-  //     prizeIcon,
-  //     dateForSort
-  //   );
-  // }, []);
+  useEffect(() => {
+    postResult(
+      category,
+      numberOfCorrectAnswers,
+      time,
+      score,
+      date,
+      prizeIcon,
+      dateForSort
+    );
+  }, []);
 
   return (
     <>
@@ -104,22 +104,6 @@ export default function QuizResult({
           onClick={(e) => setShowCorrectAnswers(true)}
         >
           Show me correct answers
-        </button>
-        <button
-          className="secondary_btn"
-          onClick={(e) =>
-            postResult(
-              category,
-              numberOfCorrectAnswers,
-              time,
-              score,
-              date,
-              prizeIcon,
-              dateForSort
-            )
-          }
-        >
-          Save my result
         </button>
         <button className="secondary_btn" onClick={() => navigate("/results")}>
           Go to results
