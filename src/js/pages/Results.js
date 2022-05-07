@@ -27,16 +27,12 @@ export default function Results() {
           prize: doc.data().prize,
           dateForSort: doc.data().dateForSort,
         }));
-        setResults((prevState) => [...prevState, resultsFromFirebase]);
+        setResults((prevState) => [...prevState, resultsFromFirebase].map((el) => el.sort((a, b) => b.dateForSort - a.dateForSort)));
       });
     });
   }, []);
 
-  useEffect(() => {
-    results.map((el) => el.sort((a, b) => b.dateForSort - a.dateForSort));
-  }, [results]);
-
-  console.log(results);
+  // console.log(results)
 
   return (
     <>
