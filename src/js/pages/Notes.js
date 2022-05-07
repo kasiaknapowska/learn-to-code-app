@@ -64,6 +64,8 @@ export default function Notes() {
   const onEditNote = (currentNote) => {
     const { category, title, text, id } = currentNote;
     if (title === "" || text === "") {
+      title = currentNote.title;
+      text = currentNote.text;
       return;
     }
     editNote(id, category, title, text);

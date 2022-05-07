@@ -14,7 +14,7 @@ export default function Results() {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    console.log("1");
+    setResults([]);
     availableCategories.map((category) => {
       getResults(category, (response) => {
         const resultsFromFirebase = response.docs.map((doc) => ({
@@ -27,6 +27,7 @@ export default function Results() {
           prize: doc.data().prize,
           dateForSort: doc.data().dateForSort,
         }));
+        
         setResults((prevState) => [...prevState, resultsFromFirebase].map((el) => el.sort((a, b) => b.dateForSort - a.dateForSort)));
       });
     });
